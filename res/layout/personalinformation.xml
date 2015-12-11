@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0396db" >
+
+        <ImageView
+            android:id="@+id/p_return"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/personal_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="@string/personal_save"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/per_information"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_marginLeft="15dip" >
+
+                <!-- 头像 -->
+
+                <ImageView
+                    android:id="@+id/userface"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/desc" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/nickname"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 简介 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="#22000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="@string/signature"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <com.peso.view.LineEditText
+                android:id="@+id/signature_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/signature_text"
+                android:textColor="#666666"
+                android:textColorHint="#ffffff"
+                android:textColorLink="#ffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_back"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/interest"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/interest"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <com.peso.view.LineEditText
+            android:id="@+id/interest_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/interest_text"
+            android:textColor="#666666"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#ebebeb" >
+    </LinearLayout>
+
+    <!--
+<TextView
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="25dp"
+    android:id="@+id/textView2"
+    android:gravity="center"
+    android:layout_width="120dp"
+    android:layout_height="55dp"
+    android:textSize="25sp"
+    android:text="@string/head" />
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:contentDescription="@string/desc"
+    android:src="@drawable/head" />
+</LinearLayout>
+/***************昵称*********************/
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal" >
+<TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/nickname"
+        android:textSize="25sp" />
+<EditText
+    android:id="@+id/edit_all_search"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:hint="@string/nickname1">
+</EditText>
+ <requestFocus />
+ </LinearLayout>
+/***************账号************************/
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/account"
+        android:textSize="25sp" />
+
+<EditText
+    android:id="@+id/edit_accurate_search"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:hint="@string/nickname1">
+<requestFocus />
+</EditText>
+</LinearLayout>
+/***************兴趣****************/
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal" >
+<TextView
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/textView4"
+    android:gravity="center"
+    android:layout_width="120dp"
+    android:layout_height="35dp"
+    android:textSize="25sp"
+    android:text="@string/interest" />
+<EditText
+    android:layout_marginTop="10dp"
+    android:id="@+id/edit_year"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:hint="@string/nickname1">
+<requestFocus />
+</EditText>
+</LinearLayout>
+/********************个性签名***************/
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/personality_signature"
+        android:textSize="25sp" />
+
+<EditText
+    android:layout_marginTop="10dp"
+    android:id="@+id/editText3"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:hint="@string/nickname1">
+<requestFocus />
+</EditText>
+</LinearLayout>   -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_back"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/sex"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <com.peso.view.LineEditText
+            android:id="@+id/sex_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/sex_text"
+            android:textColor="#666666"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_back"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/birthplace"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_back"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/email"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <com.peso.view.LineEditText
+            android:id="@+id/email_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/email_text"
+            android:textColor="#666666"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#ebebeb" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_back"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/school"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <com.peso.view.LineEditText
+            android:id="@+id/school_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/school_text"
+            android:textColor="#666666"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_back"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/major"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/major"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <com.peso.view.LineEditText
+            android:id="@+id/major_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/major_text"
+            android:textColor="#666666"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#ebebeb" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="10dip"
+        android:background="#ff0000"
+        android:text="@string/logout_button"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18dp" />
+
+</LinearLayout>

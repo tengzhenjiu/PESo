@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF0396db" >
+
+        <LinearLayout
+            android:id="@+id/sign_arrow_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3.2">
+
+            <ImageView
+                android:id="@+id/sign_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/back" />
+
+        </LinearLayout>
+        <!-- 搜索文本框 -->
+
+        <RelativeLayout
+            android:id="@+id/search_comments_out"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.1" >
+
+            <AutoCompleteTextView
+                android:id="@+id/search_comments"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="false"
+                android:layout_centerVertical="true"
+                android:background="@drawable/littlewhite"
+                android:completionThreshold="1"
+                android:hint="@string/InputComments"
+                android:paddingLeft="10dp"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/search_comments"
+                android:layout_alignRight="@+id/search_comments"
+                android:layout_alignTop="@+id/search_comments" >
+
+                <TextView
+                    android:id="@+id/advanced_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Advaced"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#FF0396db"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1" >
+    </ListView>
+
+</RelativeLayout>

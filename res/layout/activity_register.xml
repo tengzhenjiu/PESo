@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_back" >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.10" >
+        
+        <!-- Peso文字 -->
+	<ImageView
+            android:id="@+id/register_title"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/peso_logo1" />
+
+	</LinearLayout>
+     	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:layout_weight="1" >
+			<!-- 用户名 -->
+			<com.peso.view.LineEditText
+			   android:id="@+id/uesrname"
+			   android:layout_width="match_parent"
+			   android:layout_height="50dip"
+			   android:layout_marginLeft="10dip"
+			   android:layout_marginRight="10dip"
+			   android:hint="@string/username_edti_toast"
+			   android:gravity="center"
+			   android:background="@drawable/user"
+			android:textColor="#ffffff"
+			   android:textColorHint="#ffffff"
+			android:textColorLink="#ffffff"
+			 />
+			  
+			<!-- 邮箱 -->
+			<com.peso.view.LineEditText
+			   android:id="@+id/e_mail_edittext"
+			   android:layout_gravity="center"
+			   android:layout_width="match_parent"
+			   android:layout_marginLeft="10dip"
+			   android:layout_marginRight="10dip"
+			   android:layout_height="50dp"
+			   android:background="@drawable/email"
+			   android:hint="@string/email_edit_toast"
+			   android:gravity="center"
+			android:textColor="#ffffff"
+			   android:textColorHint="#ffffff"
+			android:textColorLink="#ffffff"
+			/>
+			
+			<!-- 密码 -->
+			<com.peso.view.LineEditText
+			   android:id="@+id/register_mima"
+			   android:layout_width="match_parent"
+			   android:inputType="textPassword"
+			   android:hint="@string/password_edit_toast"
+			   android:layout_marginLeft="10dip"
+			   android:layout_marginRight="10dip"
+			   android:layout_height="50dp"
+			   android:gravity="center"
+			   android:textColor="#ffffff"
+			   android:textColorHint="#ffffff"
+			   android:textColorLink="#ffffff"
+			   android:background="@drawable/password"
+			 />		
+		</LinearLayout>
+   
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_weight="1.45"
+    > 
+       	<!-- 注册按钮 -->
+			<Button
+			   android:id="@+id/register_button"
+			   android:text="@string/register_button" 
+			   android:background="@drawable/shapebutton"
+			   android:layout_width="match_parent"
+	           android:layout_height="55dp"
+	           android:layout_marginLeft="10dip"
+	           android:layout_marginRight="10dip"
+			   android:textColor="#FFFFFFFF"
+			   android:textSize="20sp"
+			 />
+		
+			<LinearLayout
+			      android:layout_width="match_parent"
+			      android:layout_height="match_parent"
+			      android:orientation="horizontal"
+			      android:layout_marginTop="15dip"
+			      
+			    > 
+				      <!-- 注册提示 -->
+					  <TextView
+					      android:id="@+id/login_text1"
+					      android:layout_width="match_parent"
+					      android:layout_height="wrap_content"
+					      android:text="@string/register_toast_text"
+					      android:gravity="right"
+					      android:layout_weight="0.25"
+					      android:textColor="#FFFFFFFF"
+					      android:textSize="12sp" 
+					   />  
+					  <!-- 登录 -->
+					  <TextView
+					     android:id="@+id/login_text2"
+						 android:layout_width="match_parent"
+						 android:layout_height="wrap_content"
+						 android:layout_weight="0.5"
+						 android:textColor="#FFFFFFFF"
+						 android:text="@string/login"
+						 android:textSize="14sp" 
+					  />  
+				</LinearLayout>
+	 </LinearLayout>
+	 
+</LinearLayout>

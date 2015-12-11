@@ -1,0 +1,25 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+  <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    <!-- 定义一个样式，继承android系统的对话框样式 android:style/Theme.Dialog-->
+        <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+                <!-- window_box为我们定义的窗口背景-->
+          
+        </style>
+
+</resources>

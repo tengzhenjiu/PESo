@@ -1,0 +1,14 @@
+<!-- progres.xml在检查更新中的进度条所使用 使用文件UpdateManager.java -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" >
+
+<ProgressBar
+android:id="@+id/apkdownloadprogress"
+style="?android:attr/progressBarStyleHorizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+

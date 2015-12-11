@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0396db"
+        android:orientation="horizontal" >
+        
+		退出评论界面
+        <ImageView
+            android:id="@+id/return_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ic_jiantou" />
+        
+		用户改变论文字体属性
+        <ImageView
+            android:id="@+id/front_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="182dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ic_a" />
+    </LinearLayout> -->
+    
+	<!-- 用户评论的论文 -->
+<!--     <TextView
+        android:id="@+id/paper_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="288dp"
+        /> -->
+    
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e5e5e5" > 
+           
+  <!-- 用户编写评论文本处 -->
+  <EditText
+      android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/comment_textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+       
+        android:hint="@string/comment_text"
+        android:textSize="15sp"
+        android:background="@drawable/grey_dp" />
+  
+
+    
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal" >
+    
+	<!-- 用户给论文评星星的级别 -->
+    <RatingBar
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/comment_ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:maxHeight="30dp"
+        android:maxWidth="30dp"
+        android:soundEffectsEnabled="true" 
+       />
+    
+     <!-- 用户评论发表按钮 -->
+     <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/report_button"
+        android:layout_marginLeft="120dp"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="@string/report_button"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/blue_dp"
+      />
+ </LinearLayout>
+</LinearLayout>
+</LinearLayout>

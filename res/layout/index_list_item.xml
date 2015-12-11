@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/list_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:text="标题"
+        android:textColor="#000000"
+        android:textSize="20dip" />
+
+    <LinearLayout
+        android:id="@+id/id_text_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <!-- 浅灰色#D8D8D8 -->
+                <!-- 存在淡蓝色 #89BEF7 -->
+
+                <TextView
+                    android:id="@+id/list_item_time"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#89BEF7"
+                    android:gravity="center"
+                    android:text="No\nDate"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/list_item_authors"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:singleLine="false"
+                android:text="作者"
+                android:textColor="#666666"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <!-- 查看按钮在这里！！！！！！！！！！！！！！！ -->
+
+            <ImageView
+                android:id="@+id/list_item_download"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="0dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/package_download" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

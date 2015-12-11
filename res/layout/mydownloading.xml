@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical" >
+<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0396db"
+    >
+    
+<ImageView
+            android:id="@+id/md_return"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/back1" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="50dp"
+    android:layout_toRightOf="@+id/imageView1"
+    android:text="@string/mydownloading_text"
+    android:textSize="20sp"
+    android:textColor="#FFFFFF" />
+
+<ImageView
+    android:contentDescription="@string/desc"
+    android:id="@+id/imageView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_sousuo" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignLeft="@+id/textView1"
+    android:text="@string/all"
+    android:textColor="#FFFFFF" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:background="@drawable/blue_text"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="@string/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/search" 
+        android:textSize="20sp"/>
+    
+</RelativeLayout>
+
+<ListView
+    android:id="@+id/listView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</ListView>
+
+</LinearLayout>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+     android:id="@+id/comment_main" >
+
+    <!-- 标题栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#0396db"
+        android:orientation="horizontal" >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/comment_return"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/back" 
+         />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:gravity="right|center_vertical" >
+           
+
+        <ImageView
+            android:id="@+id/comment_content_size" 
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/a_plus"
+            android:layout_marginLeft="5dp"
+             />  
+             
+		  <ImageView
+            android:id="@+id/comment_copy"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:src="@drawable/copy_img" 
+          android:layout_marginLeft="5dp"
+            />
+     
+        
+        <ImageView
+            android:id="@+id/comment_share_img"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_connect" />
+        
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        
+        <!-- 請在此处添textView并加要显示的文本信息 -->
+
+        <TextView
+            android:id="@+id/jitineirong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/textview"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:background="#EEEEEE"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/Comment_button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/comment" 
+      
+            />
+    </LinearLayout>
+
+</LinearLayout>
