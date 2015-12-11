@@ -313,12 +313,6 @@
             android:text="@string/birthplace"
             android:textColor="#000000"
             android:textSize="16dp" />
-
-        <DatePicker
-            android:id="@+id/datePicker"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-
     </LinearLayout>
 
     <LinearLayout
