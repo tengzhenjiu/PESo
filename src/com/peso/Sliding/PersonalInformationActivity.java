@@ -17,6 +17,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.peso.MaininterfaceActivity;
@@ -35,7 +36,8 @@ public class PersonalInformationActivity extends Activity implements
 	private TextView nickname;
 	String name;
 	private TextView signature;
-	private TextView birthday;
+	private LinearLayout birthday;
+	private TextView birthday_text;
 	private TextView interest;
 	private TextView sex;
 	private TextView email;
@@ -62,7 +64,8 @@ public class PersonalInformationActivity extends Activity implements
 		
 		nickname = (TextView) findViewById(R.id.nickname);
 		signature = (TextView) findViewById(R.id.signature);
-		birthday = (TextView) findViewById(R.id.birthday);
+		birthday = (LinearLayout) findViewById(R.id.birthday);
+		birthday_text= (TextView) findViewById(R.id.birthday_text);
 		interest= (TextView) findViewById(R.id.interest);
 		sex=(TextView) findViewById(R.id.sex);
 		email=(TextView) findViewById(R.id.email);
@@ -188,9 +191,9 @@ public class PersonalInformationActivity extends Activity implements
 		// DatePickerDialog 中按钮Set按下时自动调用
 
 		// 通过id获得TextView对象
-		birthday.setText(Integer.toString(year) + "-"
-				+ Integer.toString(monthOfYear) + "-"
-				+ Integer.toString(dayOfMonth));
+		birthday_text.setText(monthOfYear+ ". "
+				+ Integer.toString(dayOfMonth) + " "
+				+ Integer.toString(year));
 		// 设置text
 	}
 }
