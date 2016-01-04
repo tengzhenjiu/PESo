@@ -426,15 +426,13 @@ public class MaininterfaceActivity extends Activity
 								@Override
 								public void onAnimationStart(
 										Animation animation) {
-									// TODO Auto-generated method stub
-									
+									// TODO Auto-generated method stub	
 								}
 
 								@Override
 								public void onAnimationRepeat(
 										Animation animation) {
 									// TODO Auto-generated method stub
-									
 								}
 
 							});
