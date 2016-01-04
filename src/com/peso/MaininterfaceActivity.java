@@ -422,7 +422,6 @@ public class MaininterfaceActivity extends Activity
 											mItemView);
 									runFirst = false;
 								}
-
 								@Override
 								public void onAnimationStart(
 										Animation animation) {
