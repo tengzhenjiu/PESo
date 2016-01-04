@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Peso1</string>
+    <string name="app_name">PESo</string>
     <string name="action_settings">Settings</string>
     <string name="peso_textview">Peso</string>
     <string name="interface_peso_textView">PESo</string>
